@@ -1,0 +1,8 @@
+apiVersion: v2
+name: apps
+description: |
+  App of Apps parent chart. Bootstrap this once with helm install.
+  ArgoCD then manages all child applications automatically.
+  To add a new app: create a new Application CR in templates/ and push to Git.
+type: application
+version: 0.1.0

@@ -1,0 +1,26 @@
+# Global ArgoCD settings
+argocd:
+  namespace: argocd
+  project: default
+  repoURL: https://github.com/your-org/sample-helm-repo.git
+  targetRevision: HEAD
+  destination:
+    server: https://kubernetes.default.svc
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+
+# Per-app settings — set enabled: false to temporarily disable an app
+apps:
+  nginx:
+    enabled: true
+    chartPath: charts/nginx
+    namespace: test
+
+  # react:
+  #   enabled: true
+  #   chartPath: charts/react
+  #   namespace: react-app
