@@ -1,6 +1,6 @@
 # Namespace configuration
 namespace:
-  name: nginx-ns
+  name: test
   create: true
 
 # Replica count for the nginx deployment
