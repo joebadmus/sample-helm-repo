@@ -18,7 +18,7 @@ apps:
   nginx:
     enabled: true
     chartPath: charts/nginx
-    namespace: test
+    namespace: nginx-ns
 
   # react:
   #   enabled: true
