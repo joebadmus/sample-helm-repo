@@ -2,7 +2,7 @@
 argocd:
   namespace: argocd
   project: default
-  repoURL: https://github.com/your-org/sample-helm-repo.git
+  repoURL: https://github.com/joebadmus/sample-helm-repo.git
   targetRevision: HEAD
   destination:
     server: https://kubernetes.default.svc
